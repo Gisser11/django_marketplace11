@@ -10,13 +10,13 @@
 </head>
 <body>
     <nav class="py-6 px-6 flex justify-between items-center border-b border-gray-200 background">
-        <a href="/" class="text-xl font-bold">MarketPlace</a>
+        <a href="/" class="text-3xl font-bold">\ MARKET || PLACE \</a>
 
         <div class="space-x-6">
-             <a href="#" class="text-s font-semibold hover:text-gray-300">Разместить объявление</a>
+             <a href="{% url 'item:new' %}" class="text-s font-semibold hover:text-gray-300">Разместить объявление</a>
              <a href="#" class="text-s font-semibold hover:text-gray-300">Обзор</a>
             <a href="#" class="px-2 py-1 bg-gray-100 text-xl rounded-xl hover:bg-gray-400"> Войти в систему</a>
-            <a href="#" class="px-2 py-1 text-white bg-gray-500 text-xl rounded-xl hover:bg-teal-900"> Регистрация</a>
+            <a href="{% url 'dashboard:index' %}" class="px-2 py-1 text-white bg-gray-500 text-xl rounded-xl hover:bg-teal-900"> DashBoard</a>
 
         </div>
     </nav>

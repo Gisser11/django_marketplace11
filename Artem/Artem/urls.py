@@ -7,7 +7,9 @@ from core.views import index,contact
 
 urlpatterns = [
     path('', index, name='index'),
+    path('items/', include('item.urls')),
     path('contact/', contact, name='contact'),
+    path('dashboard/', include('dashboard.urls')),
     path('admin/', admin.site.urls),
     
 
